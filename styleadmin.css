@@ -1,0 +1,45 @@
+body.admin {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+body.user {
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #FF5A2C;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background-color: #FF5A2C;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #e94e22;
+}

@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b1726;
+}
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+     background-image: url(imagenes/photo-1603983732011-caaf6ca67a3e.jfif);
+     border-radius: 0 0 25% 25%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+    align-items: center; 
+    min-height: 80vh;
+    padding: 80px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.Logo {
+ color:#FF5A2C;
+ font-size: 25px;
+ font-weight: 800;
+ text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+position: relative;
+float: left;
+}
+
+.menu .navbar ul li a {
+
+font-size: 18px;
+padding: 20px;
+color: #FFFFFF;
+font-weight: 600;
+display: block;
+}
+
+.menu .navbar ul li a:hover {
+color: #FF5A2C;
+}
+.menu {
+display:flex;
+}
+
+.menu-icono {
+width: 25px;
+}
+
+.menu label {
+cursor: pointer;
+display:none;
+}
+
+.header-content {
+display: flex;
+}
+
+.header-txt {
+    flex-basis: 50%;
+}
+
+.header-txt h1 {
+font-size: 60px;
+color: #FFFFFF;
+line-height: 1.3;
+margin-bottom: 25px;
+}
+
+.header-txt span {
+    color: #FF5A2C;
+}
+
+.header-txt p {
+font-size: 17px;
+color: #E0E0E0;
+margin-bottom: 45px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.btn-1, .btn-2, .brn-3 {
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid #FF5A2C;
+    border-radius: 25px;
+    margin-right: 25px;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.btn-1:hover {
+background-color: #FF5A2C;
+}
+
+.popular {
+padding: 100px 0;
+text-align: center;
+}
+
+h2 {
+color: #FFFFFF;
+font-size: 35px;
+margin-bottom: 45px;
+}
+
+.popular-content {
+display: flex;
+justify-content: space-between;
+}
+
+.popular-content img {
+display: flex;
+justify-content: space-between;
+}
+
+.popular-content img {
+width: 150px;
+}
+
+.product-content {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 50px;
+}
+
+.product-1 {
+background-color: #2A223A;
+}
+
+.product-txt {
+padding: 50px 30px;
+}
+
+h3 {
+font-size: 20px;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+.price {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.price p {
+font-size: 17px;
+color: #FF5A2C;
+}
+
+.btn-2 {
+    padding: 5px 25px;
+    background-color: #FF5A2C;
+    margin-right: 0;
+}
+
+.contact {
+    padding: 150px 300px;
+}
+ 
+.contact-content {
+    background-color: #2A223A;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: 18px 25px;
+    background-color: #3F3456;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+::placeholder {
+    color: #E0E0E0;
+    font-size: 17px;
+}
+
+.btn-3 {
+    background-color: #FF5A2C;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 50px 0;
+}
+
+.link ul {
+    display: flex;
+}
+
+.link ul li > a {
+    font-size: 17px;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.link ul li > a:hover {
+    color: #FF5A2C;
+}
+
+@media(max-width:991px) {
+    .menu{
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #FF5A2C;
+        display:none;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #1b1726;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+
+    }
+
+
+#menu:checked ~ .navbar {
+    display: initial;
+    
+}
+
+.header {
+    min-height: 0vh;
+    padding: 80px 30px 50px 30px;
+}
+
+.header-txt {
+    text-align: center;
+    flex-basis: 100%;
+} 
+
+.header-txt h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.butons {
+    justify-content: center;
+}
+
+.btn-1:last-of-type {
+    margin-right: 0;    
+}
+
+.popular {
+    display: none;
+}
+
+.product {
+    padding: 30px;
+}
+
+.product-content {
+    grid-template-columns: repeat(1,fr);
+    gap: 30px;
+}
+
+.product-1 img {
+    width: 100%;
+}
+
+.contact {
+    padding: 30px;
+}
+
+form {
+    flex-direction: column;
+}
+
+input {
+    margin: 0 0 20px 0;
+}
+
+.footer {
+    flex-direction: column;
+    text-align: center;
+}
+
+.link ul {
+    margin-top: 20px;
+}
+
+}
+
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+  }
+  
+  button {
+    --primary-color: #111;
+    --hovered-color: #000;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  button p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color)
+  }
+  
+  button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  button p::before {
+    position: absolute;
+  /*   box-sizing: border-box; */
+    content: "Pedir";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  button:hover::after {
+    width: 100%;
+  }
+  
+  button:hover p::before {
+    width: 100%;
+  }
+  
+  button:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color)
+  }
+  
+  button svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+  }
+
+  
+  .btn-3 {
+    button {
+        width: 9em;
+        height: 3em;
+        border-radius: 30em;
+        font-size: 15px;
+        font-family: inherit;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: 6px 6px 12px #FF5A2C,
+                    -6px -6px 12px #FF5A2C;
+       }
+       
+       button::before {
+        content: '';
+        width: 0;
+        height: 3em;
+        border-radius: 30em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+        transition: .5s ease;
+        display: block;
+        z-index: -1;
+       }
+       
+       button:hover::before {
+        width: 9em;
+       }
+  }
+
